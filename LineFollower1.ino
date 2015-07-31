@@ -1,8 +1,8 @@
 #include <QTRSensors.h>
 #include "Servo.h"
 
-#define DEFAULT_TURN           80
-#define DEFAULT_TURN_BACK      70
+#define DEFAULT_TURN           100
+#define DEFAULT_TURN_BACK      90
 #define NUM_SENSORS             4  
 #define NUM_SAMPLES_PER_SENSOR  4  
 
@@ -78,7 +78,7 @@ void loop()
        else {   go(0,0);
                 delay(100);
                 go(50,50);
-                delay(200);
+                delay(300);
                 go(0,0); 
                 close() ;
                 go(0,0);
